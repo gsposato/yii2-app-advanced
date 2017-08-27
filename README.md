@@ -1,55 +1,57 @@
-Yii 2 Advanced Project Template
-===============================
+Yii2 Advanced Application Template
+==================================
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-developing complex Web applications with multiple tiers.
+Yii 2 Advanced Application Template with Fixed Bower
 
-The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application.
+[![Latest Stable Version](https://poser.pugx.org/yidas/yii2-app-advanced/v/stable?format=flat-square)](https://packagist.org/packages/yidas/yii2-app-advanced)
+[![Latest Unstable Version](https://poser.pugx.org/yidas/yii2-app-advanced/v/unstable?format=flat-square)](https://packagist.org/packages/yidas/yii2-app-advanced)
+[![License](https://poser.pugx.org/yidas/yii2-app-advanced/license?format=flat-square)](https://packagist.org/packages/yidas/yii2-app-advanced)
 
-The template is designed to work in a team development environment. It supports
-deploying the application in different environments.
+Let you use pure Composer to install or update Yii2 smoothly, no Bower issue anymore. 
 
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
+---
 
-[![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-app-advanced/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://poser.pugx.org/yiisoft/yii2-app-advanced/downloads.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-app-advanced.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-advanced)
+INTRODUCTION
+------------
 
-DIRECTORY STRUCTURE
--------------------
+This template is Fixed Bower version of [Yii 2](http://www.yiiframework.com/) advanced application, which required [yidas/yii2-bower-asset](https://github.com/yidas/yii2-bower-asset) for updating composer with Bower asset.
+
+In this template, Bower packages are fixed for current version relating to Yii2 core, so you need to manually update Bower-Asset when needed.
+
+---
+
+INSTALLATION
+------------
+
+### Install via Composer
+
+If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
+at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
+
+You can then install this project template using the following command:
 
 ```
-common
-    config/              contains shared configurations
-    mail/                contains view files for e-mails
-    models/              contains model classes used in both backend and frontend
-    tests/               contains tests for common classes    
-console
-    config/              contains console configurations
-    controllers/         contains console controllers (commands)
-    migrations/          contains database migrations
-    models/              contains console-specific model classes
-    runtime/             contains files generated during runtime
-backend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains backend configurations
-    controllers/         contains Web controller classes
-    models/              contains backend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for backend application    
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-frontend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains frontend configurations
-    controllers/         contains Web controller classes
-    models/              contains frontend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for frontend application
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-    widgets/             contains frontend widgets
-vendor/                  contains dependent 3rd-party packages
-environments/            contains environment-based overrides
+composer create-project --prefer-dist yidas/yii2-app-advanced
 ```
+
+Also, you can make a minimal installation without development tool:
+```
+composer create-project --prefer-dist --no-dev yidas/yii2-app-advanced
+```
+
+> With --no-dev project, set to prod-env or remove the debug & gii usage from `config/web.php` to prevent error.
+
+---
+
+### Install from an Archive File
+
+[Download yii2-app-advanced-2.0.12 Archive](https://github.com/yidas/yii2-app-advanced/releases/download/2.0.12/yii2-app-advanced-2.0.12.tar.gz)
+
+Extract the downloaded file to a  Web-accessible folder, which includes vendor already.
+
+---
+
+DOCUMENTATION
+-------------
+
+Please refer to [Yii 2 Advanced Project Template Document](https://github.com/yiisoft/yii2-app-advanced/blob/master/docs/guide/README.md)
