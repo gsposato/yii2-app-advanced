@@ -12,13 +12,12 @@ If you do not have [Composer](http://getcomposer.org/), follow the instructions 
 
 With Composer installed, you can then install the application using the following commands:
 
-    composer global require "fxp/composer-asset-plugin:^1.3.1"
     composer create-project --prefer-dist yiisoft/yii2-app-advanced yii-application
 
-The first command installs the [composer asset plugin](https://github.com/francoispluchino/composer-asset-plugin/)
-which allows managing bower and npm package dependencies through Composer. You only need to run this command
-once for all. The second command installs the advanced application in a directory named `yii-application`.
-You can choose a different directory name if you want.
+The command installs the advanced application in a directory named `yii-application`. You can choose a different
+directory name if you want.
+
+It uses [asset-packagist](https://asset-packagist.org/) for managing bower and npm package dependencies through Composer. Also you can use [asset-plugin](https://packagist.org/packages/fxp/composer-asset-plugin), as in earlier versions, but it works slowly.
 
 ## Install from an Archive File
 
@@ -245,10 +244,9 @@ This way is the easiest but long (~20 min).
    cd yii2-app-advanced
    ```
 
-5. Run commands:
+5. Run command:
 
    ```bash
-   vagrant plugin install vagrant-hostmanager
    vagrant up
    ```
    
@@ -269,17 +267,10 @@ That's all. You just need to wait for completion! After that you can access proj
    * copy `vagrant-local.example.yml` to `vagrant-local.yml`
 
 6. Place your GitHub personal API token to `vagrant-local.yml`
-7. Add the following lines to [hosts file](https://en.wikipedia.org/wiki/Hosts_(file)):
-   
-   ```
-   192.168.83.137 y2aa-frontend.dev
-   192.168.83.137 y2aa-backend.dev
-   ```
 
-8. Open terminal (`cmd.exe`), **change directory to project root** and run commands:
+7. Open terminal (`cmd.exe`), **change directory to project root** and run command:
 
    ```bash
-   vagrant plugin install vagrant-hostmanager
    vagrant up
    ```
    
