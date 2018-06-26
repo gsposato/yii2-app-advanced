@@ -12,13 +12,33 @@
         "irc": "irc://irc.freenode.net/yii",
         "source": "https://github.com/yiisoft/yii2"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.0",
-        "yidas/yii2-bower-asset": "~2.0.6",
+        "yidas/yii2-bower-asset": "*",
+        "bedezign/yii2-audit": "*",
         "yiisoft/yii2": "~2.0.6",
         "yiisoft/yii2-bootstrap": "~2.0.0",
-        "yiisoft/yii2-swiftmailer": "~2.0.0"
+        "yiisoft/yii2-swiftmailer": "~2.0.0",
+        "kartik-v/yii2-grid": "*",
+        "kartik-v/yii2-mpdf": "*",
+        "kartik-v/yii2-widget-depdrop": "*",
+        "kartik-v/yii2-widget-select2": "*",
+        "kartik-v/yii2-widget-switchinput": "*",
+        "kartik-v/yii2-widget-datepicker": "*",
+        "kartik-v/yii2-widget-datetimepicker": "*",
+        "kartik-v/yii2-krajee-base": "*",
+        "kartik-v/yii2-field-range": "*",
+        "udokmeci/yii2-beanstalk": "*",
+        "ircmaxell/password-compat": "*",
+        "hautelook/phpass": "*",
+        "pear/console_table": "*",
+        "filsh/yii2-oauth2-server": "*",
+        "google/recaptcha": "*",
+        "himiklab/yii2-recaptcha-widget": "*",
+        "frostealth/yii2-aws-s3": "*",
+        "athari/yalinqo": "*",
+        "mobileassetsolutions/taxcloud": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
@@ -27,5 +47,19 @@
 
         "codeception/base": "^2.2.3",
         "codeception/verify": "~0.3.1"
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@bitbucket.org:mobileassetsolutions/taxcloud.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/gsposato/yii2-bower-asset.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/gsposato/yii2-audit.git"
+        }
+    ]
 }
