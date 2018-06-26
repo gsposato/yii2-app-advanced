@@ -38,6 +38,7 @@
         "himiklab/yii2-recaptcha-widget": "*",
         "frostealth/yii2-aws-s3": "*",
         "athari/yalinqo": "*",
+        "braintree/braintree_php": "*",
         "mobileassetsolutions/taxcloud": "*"
     },
     "require-dev": {
